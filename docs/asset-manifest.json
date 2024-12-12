@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.fafc8537.css",
-    "main.js": "/static/js/main.23a7c7c0.js",
-    "static/js/453.51457fd6.chunk.js": "/static/js/453.51457fd6.chunk.js",
-    "index.html": "/index.html",
-    "main.fafc8537.css.map": "/static/css/main.fafc8537.css.map",
-    "main.23a7c7c0.js.map": "/static/js/main.23a7c7c0.js.map",
-    "453.51457fd6.chunk.js.map": "/static/js/453.51457fd6.chunk.js.map"
+    "main.css": "/marvel-movies/static/css/main.fafc8537.css",
+    "main.js": "/marvel-movies/static/js/main.7dc8dd4b.js",
+    "static/js/453.51457fd6.chunk.js": "/marvel-movies/static/js/453.51457fd6.chunk.js",
+    "index.html": "/marvel-movies/index.html",
+    "main.fafc8537.css.map": "/marvel-movies/static/css/main.fafc8537.css.map",
+    "main.7dc8dd4b.js.map": "/marvel-movies/static/js/main.7dc8dd4b.js.map",
+    "453.51457fd6.chunk.js.map": "/marvel-movies/static/js/453.51457fd6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fafc8537.css",
-    "static/js/main.23a7c7c0.js"
+    "static/js/main.7dc8dd4b.js"
   ]
 }
