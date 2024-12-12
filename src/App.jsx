@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { HashRouter as Router,Routes,Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Movie from './pages/Movie';
 import Navbar from './pages/Navbar';
@@ -8,13 +8,13 @@ function App() {
   console.log(useSum(4,4,4,4))
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <Navbar />
         <Routes>
            <Route path="/" element={<Home />} />
            <Route path="/movie/:id" element={<Movie />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
