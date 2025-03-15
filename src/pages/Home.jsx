@@ -11,13 +11,13 @@ export default function Home() {
         let result = await axios.get(movieUrl);
 
         if(result.status === 200){
-            setMovies(result.data.data.data);
-            setLinks(result.data.data.links);
+            setMovies(result.data);
+            setLinks(result.data);
             setLoading(false);
         }
     }
 
-    useEffect(function(){getMovies('https://marvel-film-api.fly.dev/api/movies')},[])
+    useEffect(function(){getMovies('https://ghibliapi.vercel.app/films')},[])
 
   return (
     <div>
@@ -27,28 +27,23 @@ export default function Home() {
       </div> Loading...</h1>:
          <div>
               <header className='bg-dark p-3 text-white text-center'>
-            <h1 className='display-4'> Welcome to Marvel Studio</h1>
+            <h1 className='display-4'> Welcome to Ghibli Studio Guide</h1>
         </header>
        <div className="container">
           <div className="row">
             {
               movies.map((movie)=>(
-                <div className="col-sm-4">
+                <div className="col-sm-6 p-3">
                     <div className="card" key={movie.id} style={{cursor:'pointer'}} onClick={()=>{navigate(`/movie/${movie.id}`)}}>
-                       <img src={movie.poster} alt="" className="card-img-top" />
+                       <img src={movie.movie_banner} alt="" className="card-img-top" />
+                        <div className="card-body">
+                            <h5 className="card-title">{movie.title}</h5> 
+                        </div>
                     </div>
                 </div>
               ))
             }
           </div>
-       </div>
-
-       <div className="container text-center p-3">
-          {
-            links?.map((link)=>(
-             link?.url!=null && <button className='btn btn-primary mx-1' onClick={()=>{setLoading(true);getMovies(link.url)}}>{link.label}</button>
-            ))
-          }
        </div>
          </div>
        }

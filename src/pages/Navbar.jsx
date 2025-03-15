@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <div>
         <nav className='navbar bg-dark navbar-dark p-3'>
-            <Link to="/" className='navbar-brand'>Marvel Studio Movies</Link>
+            <Link to="/" className='navbar-brand'>Ghibli Studio Guide</Link>
         </nav>
     </div>
   )
